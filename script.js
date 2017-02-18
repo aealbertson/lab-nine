@@ -1,3 +1,6 @@
+
+
+
 var total = 0;
 
 var item1 = {
@@ -29,13 +32,10 @@ printedTotal = document.createElement("p");
 printedTotal.innerHTML = total;
 document.body.appendChild(printedTotal);
 
-// console.log("$ " + total);
 
-// document.getElementById("item1").innerHTML = item1.name + " " + item1.price;
-// document.getElementById("item2").innerHTML = item2.name + " " + item2.price;
-// document.getElementById("item3").innerHTML = item3.name + " " + item3.price;
-// document.getElementById("total").innerHTML = total;
-
-
-// var printedList=document.createElement("div");
-// printedList.innerHTML = groceries[i].name + " " + groceries[i].price;
+function myFunction(){
+ var name = document.getElementById("Item Name").value;
+ var price = document.getElementById("Price").value * 1;
+ var object = {name:name, price:price}
+ groceries.push(object);
+ }
